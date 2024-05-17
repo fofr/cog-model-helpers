@@ -1,10 +1,4 @@
-# Usage:
-# 1. Create an instance of OptimiseImages with the desired output format and quality.
-#    optimiser = OptimiseImages(output_format="jpg", output_quality=80)
-# 2. Call the optimise_image_files method with a list of file paths to optimise the images.
-#    optimiser.optimise_image_files(files=[Path("image1.png"), Path("image2.jpg")])
-
-from cog import Input
+from typing import Input
 from PIL import Image
 
 IMAGE_FILE_EXTENSIONS = [".jpg", ".jpeg", ".png"]
